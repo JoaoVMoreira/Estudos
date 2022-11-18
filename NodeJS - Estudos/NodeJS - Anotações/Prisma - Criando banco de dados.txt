@@ -1,0 +1,31 @@
+NODE JS
+
+No pgadmin é onde iremos realziar a criação do banco de dados.
+
+Após criar o banco de dados iremos acessá-lo pelo bekeeper em uma conexão postgree na porta 5432
+
+Para instalar o prisma utilizamos o comando 
+
+yarn add prisma -D
+
+tambem instalar o client:
+
+yarn add @prisma/client
+
+Em seguida é necessário iniciar o prisma no projeto:
+
+npx prisma init
+
+
+Em seguida devemos relizar a conexão do prisma com nosso banco de dados.
+
+No arquivo .env iremos passar as informações do banco de dados para que ocorra a conexão.
+
+
+Tambem é importante iniciar o prisma client:
+
+criar a pasta prisma em src juntamente com seu index.ts.
+importar prisma client 
+const prismaclient = new PrismaClient()
+
+export default prismaclient 

@@ -1,0 +1,38 @@
+NODE JS
+
+
+Primeiramente é necessário importar o prismaClient no service.
+
+
+Após a importação devemos verificar se os dados foram enviados:
+
+if(!dado){
+	throw new Error('Dado nao informado')
+}
+
+Em seguida verificar se tal informação ja foi cadastrada na plataforma 
+
+const jaExiste = await prismaClient.user.findFirst({
+	where:{
+		email: email
+	}
+})
+
+//Verificando se tal dado já existe no banco de dados a partir do comando findFirst onde o sistema irá percorrer o banco de dados, assim que for encontrado o valor informado em where, este valor será inserido na variavel já existe.
+
+if (jaExiste){
+	throw new Error('Dado ja cadastrado')
+}
+
+//Caso a variavel jaExiste tenha algum valor, então será acionado o erro
+
+
+
+Cadastrando dado no banco de dados:
+
+const dado = await prismaClient.user.create({
+	data: {
+		dados: dados,
+		...
+	}
+})

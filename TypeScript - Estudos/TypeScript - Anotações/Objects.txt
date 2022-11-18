@@ -1,0 +1,28 @@
+TYPESCRIPT
+
+Podemos definir os tipos de casa uma das propriedades:
+
+const User = {
+	name: String
+	lastName?: String
+	age?: Number
+}
+
+? => deixa a propriedade opcional
+
+const user: User = {
+	name: "João"
+}
+
+
+//Unions
+
+Utilizamos para unir os parâmetros de dois types:
+
+typ Author = {
+	books: string[]
+}
+
+const author: Author & User = {
+
+}

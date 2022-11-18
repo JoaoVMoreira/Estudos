@@ -1,0 +1,65 @@
+PROGRAMACAO ORIENTADA A OBJETO
+
+As classes no JS são impressoras de objetos. A classe é criada da seguinte forma:
+
+class Person{
+	constructor(firstName, lastName, age){
+		this.firsName = firstName,
+		this.lastName = lastName,
+		this.age = age,
+	}	
+}
+
+Na funcção contructor informamos as propriedades utilizadas.
+Com o comando this. associamos as propriedades a classe person.
+Em seguida é necessário instanciar e informar os valores das propriedades a classe Person com a seguinte sintaxe:
+
+const person = new Person('joao', 'moreira', 20)
+
+
+
+Podemos tambem criar metodos para a classe. Ex:
+
+**Criando metodo que junta firstName com lastName:
+
+class Person{
+	constructor(firstName, lastName, age){
+		this.firsName = firstName,
+		this.lastName = lastName,
+		this.age = age,
+	}	
+
+	getFullName(){
+		return `${this.firstname} ${this.lastName}`
+	}
+}
+
+Chamamos o modulo da seguinte forma:
+
+person.getFullName()
+
+
+
+Metodos estáticos são metodos que não utilizam os valores das propriedades e são utilizados com o prefixo "static". Para chama-los utilizamos o seguinte comando:
+
+Person.speak()
+
+
+
+Podemos herdar classes:
+
+Para ciarmos um a herança utilizamos o comando extends:
+
+class Gato extends Animal{}
+
+Ao utilizamos o extends o contructor da classe Gato deve receber os mesmos parâmetros da classe animal.
+
+Para chamarmos o constructor da classe Animal utilizamos a funcao super com o parãmetro chamado
+
+class Gato extends Animal{
+	constructor(name){
+		super(name)
+	}
+}
+
+Ao realizarmos a herança, a classe dog terá acesso a todos os modulos disponiveis em Animal	

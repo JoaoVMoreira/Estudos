@@ -1,0 +1,33 @@
+Props são valores passados a componentes para que os mesmos passem a ser dinamicos .
+
+**As props são imutaveis.
+
+
+function SyaMyName(props){
+	return(
+		<div>Fala ai {props.nome}, suave?</div>
+	)
+}
+
+export default SyaMyName
+
+Para informarmos o valor de uma props utilizamos a sintaxe abaixo:
+
+<SayMyName nome="João"/>
+
+
+Podemos tambem passar dados dinamicos para props:
+
+let nome = "Maria" 
+
+<SayMyName nome={nome}/>
+
+
+
+Para evitar a repetiçao do comando props, podemos desestruturar a mesma, informando o nome das variaveis no lugar da propria props:
+
+function Pessoa({nome, idade, altura, peso}){
+	return(
+		<div>Meu nome é {nome} tenho {idade} minha altura é {altura} e eu peso{peso}kg</div>
+	)
+}

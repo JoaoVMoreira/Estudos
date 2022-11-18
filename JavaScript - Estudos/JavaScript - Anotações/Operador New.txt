@@ -1,0 +1,5 @@
+NEW
+
+Quando utilizamos o operador NEW o mesmo executa o metodo construct dentro da função, ou seja, cria um objeto.
+
+Qaundo acionamos o perador new podemos adicionar propriedades com o prefizo this., alem de desconsiderar return

@@ -1,0 +1,17 @@
+Node JS
+
+É utilizado para trabalhar o back-end de aplicações/sistemas web, não sendo integrado a navegadores
+
+Com o NodeJS é possivel desenvolver:
+
+-ApiRest
+-WebSocket
+-ServerLess
+-Stream
+
+Alguns frameWorks do node:
+
+-Express (mais utilizado)
+-Next.JS
+-Adonis.JS
+

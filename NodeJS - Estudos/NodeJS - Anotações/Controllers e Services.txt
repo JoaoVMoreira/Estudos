@@ -1,0 +1,49 @@
+NODEJS
+
+Os controllers e os services são utilizados para organizar melhor a aplicação e deixar o Router com menos linhas. 
+
+Controllers - Recebe os parâmetros da requisião e chama o o service, passando os dados necessários. 
+
+class Nome{
+	async handle(req: Request, res: Response){
+		const {//parametros a serem captados} = req.body
+		return ...
+	}
+}
+
+export {Nome}
+
+Utilizamos em rotas da seguinte forma:
+
+router.post('/', new Nome().handle)
+
+
+
+Services - É onde faremos as funcionalidades, como cadastro no banco de dados.
+
+class Nome{
+	async execute(){
+	
+		return {oque_quiser}
+	}
+}
+
+export {Nome}
+
+
+
+Para acionar o service é necessário infroma-lo no controller:
+
+const nome = new Nome()
+const user = await nome.execute({//Parâmetros})
+
+
+Para receber os valores colhidos no controller é necessário realizar o seguinte comando:
+
+interface INome{
+	//Tipagem 
+}
+
+informamos os parâmetros no execute, ja setando a tipagem:
+
+	async execute({//parâmetros}:INome){

@@ -1,0 +1,33 @@
+NODE JS
+
+Para utlizarmos o parâmetro body utilizamos o comando abaixo:
+
+const body = request.body
+
+Caso queira acessar itens especificos presente no body, é necessário informa-los no comando:
+
+const { name,  price } = request.body
+
+product.push({
+	name,
+	price,
+	id: randomUUID()
+})
+
+
+
+
+Criação de ID para gerenciamento:
+
+Para gerarmos um ID universal aleatorio utilizamos a biblioteca CRYPTO, função; RamdomUUID.
+
+
+
+Para utlizar o .get com ID informamod ":id" após a rota, em sequencia solicittar o id com o comando abaixo:
+
+const { id } = request.params
+
+
+Para buscar um produto a partir de seu ID utilizamos o comando abaixo:
+
+const product = products.find((product)=. product.id === id)

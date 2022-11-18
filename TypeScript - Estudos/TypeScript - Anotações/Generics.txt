@@ -1,0 +1,13 @@
+TYPESCRIPT
+
+
+Com o generic podemos passar tipos como parâmetros.
+
+const returnValue = <t> (value: T) => value
+
+const message = returnValue<string>("Olá mundo") //message ficará como string
+
+const count = returnValue<number>(5) // count ficará como number
+
+*Podemos passar mais de um generic por function 
+*Os generics sempre vem antes dos parâmetros

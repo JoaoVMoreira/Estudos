@@ -1,0 +1,29 @@
+TYPESCRIPT
+
+interface UserInterface {
+	name String
+	email: String
+}
+
+const User : UserInterface = {
+	name: "joao";
+	email: "teste@teste.com";
+}
+
+ Em interface temos as propriedades abaixo: 
+
+Readonly - permite somente a leitura do componente
+
+Podemos utilizar unions em interfaces.
+
+
+Inferfaces com funções:
+
+interface MathFunc {
+	(x: number, y: number): number
+}
+
+
+const sum: MathFunc = (x: number, y: number): number => {
+	return x + y
+}

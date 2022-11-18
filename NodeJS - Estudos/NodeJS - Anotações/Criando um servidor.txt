@@ -1,0 +1,28 @@
+NODE JS
+
+Para realizar a criação de um servidor é necessário que primeiramente seja criado o arquivo server.js no diretorio do projeto.
+
+Apos a criação do arquivo é necessário realizar a requisição http a partir do comando abaixo:
+
+{ const http = require("http") }
+
+
+A partir da requisição podemos utilizar o comando "http" e realizar a criação do servidor:
+
+
+http
+	.createServer((request, response)=> {
+		response.writeHead(200, {'Content-Type: 'aplication/json''})
+		response.end("Minha primeira aplicação com NodeJS")
+
+})
+.listen(4001, () => console.log("Servidor está rodando na porta 4001")
+
+
+Em createServer estamos realizando a criação do servidor e defininco o request(Tudo que eu recebo na requisição) e response(Tudo oque eu retorno na requisição).
+
+Em .listen definimos a porta que será utilizada para rodar a aplicação (4001) e definimos oque irá acontecer quando a aplicação rodar (console.log)
+
+.writeHead é padrão
+
+.end(mensagem retornada ao navegador)

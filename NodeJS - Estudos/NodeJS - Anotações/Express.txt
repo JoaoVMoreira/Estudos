@@ -1,0 +1,32 @@
+NODE JS
+
+
+Importar Express:
+
+yarn install express
+
+
+Ao realizar a importação do express é criada a pagina "node_models" onde temos tudo referente as dependencias instaladas.
+
+Tambem é inserida no packege.json a area "dependencies" onde estarão localizadas as dependencias instaldas que forem para produção.
+
+Para criar uma rota com o express:
+
+const express= require("express") //Importando o express
+
+const app = express() //Vinculando express a variavel app
+
+app.get("/primeira-rota", (request, response) => { //Chamando app.get e definindo "primeira rota"
+	return response.send("Acessou a primeira rota")
+	})
+
+app.listen(4002, ()=>('O servidor está rodando na porta 4002')) //Sinalizando a porta a ser utilizada
+
+
+
+Alem de .get, temos tambem:
+
+GET - Busca uma informação
+PUT - Altera uma informação
+POST - Inserir uma informação
+DELETE - Deletar uma informação 

@@ -1,0 +1,21 @@
+NODE JS 
+
+Squemas nada mais são que os esqueletos das entidades.
+
+Os esquimas são criados na pasta models.
+
+Para realizar a criação de um squema criamos o arquivo nome.models e utilizamos o seguinte codigo:
+
+cont userSquema = new mongoose.Schema ({
+	firstName:{
+			type: string, //Definimos o tipo do dado informado
+			require: true, //Definimos se fistName é obrigatoio (true) ou não (false)
+			minLength: 7, //Definindo a quantidade minima de caracteres
+			},
+
+	})
+
+
+Em seguida é necessário criar o model do schema:
+
+const UserModel = mongoose.model("nome", userSchema)

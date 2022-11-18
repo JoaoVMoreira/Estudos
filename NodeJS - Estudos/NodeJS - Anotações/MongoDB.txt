@@ -1,0 +1,31 @@
+NODE JS
+
+Mongo DB é um banco de dados online que será utilizado para nossas aplicações.
+
+Primeiramente é necessário intalar o mongoose para utilizar o Mongo DB na aplicação.
+
+yarn add mongoose
+
+Em seguida, na pasta src (pasta onde contemos todas as pastas que não são de configuração)criamos o arquivo connect.js na pasta database.
+
+
+Para utilizar o mongoose é necessário importa-lo:
+
+const moongose = require('mongoose')
+
+
+Em seguida realizamos a conecção com o banco de dados:
+
+const connectToDataBase = async () => {
+	await mongoose.connect(->'codigo retirado do banco de dados'<-, (error)=> {
+	if(error){
+		console.log(error)
+		}
+	return console.log('conecção realizada com sucesso')
+	})
+}
+
+
+Tambem é necessário exportar a funcção criada:
+
+module.exports = connectToDataBase 

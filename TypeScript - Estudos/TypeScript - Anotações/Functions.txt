@@ -1,0 +1,9 @@
+TYPESCRIPT
+
+Podemos declarar os tipos dos valores recebidos por uma funcao, tal como o valor final
+
+const sum = (x: number, y: number):number => {
+	return(x+y)
+}
+
+Void é uma função sem retorno

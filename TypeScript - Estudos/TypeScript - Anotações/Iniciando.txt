@@ -1,0 +1,54 @@
+TYPESCRIPT
+
+Para instalar o typeScript no projeto utilizamos o seguinte comando:
+
+		yarn add typescript
+
+
+Os arquivos TypeScript possuem a extensão .ts.
+
+
+Para compilar um codigo para js utilizamos o comando:
+
+	 tsc nome_pasta
+
+
+Para anunciar a tipagem de uma variavel utilizamos o seguinte comando:
+
+let age: number = 56
+
+number = tipo de variavel
+
+
+
+Para anunciar a tipagem de uma lista utilizamos o seguinte comando:
+
+const num: numbers[] = [1,2,3,4,5]
+
+
+
+Podemos informar mais de uma tipagem ao valor:
+
+const productId: String | Number = '1'
+
+
+Enum - Forma didatica de informar valores a uma variavel:
+
+enum Dict{
+	up = 1,
+	Down = 2
+}
+
+const direction = Dict.up (Retorna o valor 1)
+
+
+
+Type Assertions = Quando desejamos tratar uma variavel com um tipo diferente.
+
+const ProductName: any = 'Bone'
+
+let itemId = ProductName as string <-- Converte para string
+
+ou
+
+let itemId = <String>ProductName

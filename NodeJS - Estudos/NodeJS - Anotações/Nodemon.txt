@@ -1,0 +1,16 @@
+NODE JS
+
+Realiza o reload automatico a cada alteração realizada em nosso codigo.
+
+yarn add nodemon
+
+
+Em package.json adicionamos o script abaixo:
+
+"dev": "nodemon app.js"
+
+"dev"----> Comando a ser chamado
+"nodemon-> Chamando o modulo
+app.js"--> Arquivo a ser executado
+
+Para rodar o script agora podemos utilizar comando { yarn dev }

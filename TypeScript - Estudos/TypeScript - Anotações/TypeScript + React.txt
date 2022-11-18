@@ -1,0 +1,8 @@
+TYPESCRIPT
+
+Para criar um projeto React com TS utilizamos o comando:
+
+yarn create app --template typescript
+
+
+*A extensão utilizada passa a ser .tsx

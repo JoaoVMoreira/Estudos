@@ -1,0 +1,14 @@
+Iniciando uma aplicação:
+
+Para iniciar uma aplicação com NodeJS devemos utilizado o comando yarn init.
+
+Ao utulizar o comando citado será questionado o nome, verção e descrição do projeto, que ao serem informados resultarão na criação de um arquivo chamado Package.JSON, onde estará informado os dados do projeto definidos anteriormente + scripts.
+
+O arquivo Package.JSON é onde será gerenciada a aplicação e armazenadas as dependencias.
+
+Temos dois tipos de dependencias:
+
+Dev (Dependencia do hambiente de desenvolvimento)
+Dependense (Dependencia do hambiente de produção) 
+
+

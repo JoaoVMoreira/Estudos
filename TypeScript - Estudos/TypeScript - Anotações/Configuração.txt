@@ -1,0 +1,20 @@
+TYPESCRIPT
+
+Para inicializar um arquivo de configuração typescript utilizamos o comando:
+
+	tsc --init
+
+O comando acima irá criar o arquivo ts.config.json onde podemos configurar o compilador do TS.
+
+"terget" -- Informa a versão ES que será compilada
+
+"outdir" -- Onde os arquivos JS serão compilados
+
+	{Criamos a pasta dist para arquivos JS e src para arquivos TS}
+
+"rootDir" -- Onde os arquivos TS estão localizados.
+
+
+Para rodar os projetos é necessário tambem instalar ts-node-dev:
+
+yarn add ts-node-dev -D

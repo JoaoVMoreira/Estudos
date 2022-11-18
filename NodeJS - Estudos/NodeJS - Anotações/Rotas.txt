@@ -1,0 +1,15 @@
+NODE JS
+
+Podemos encaminhar diferentes respostas para cada pagina acessada, utilizando o comando request.url === nomeDaPagina. EX:
+
+if (request.url === '/produtos'){
+	response.end(
+	"Rota de produto"
+	)
+}
+
+
+Para que a aplicação não rode em loop infinito caso tentem acessar uma rota nao criada, utilizamos o comando .end sem informar .url. EX:
+
+response.end("Pagina não encontrada")
+

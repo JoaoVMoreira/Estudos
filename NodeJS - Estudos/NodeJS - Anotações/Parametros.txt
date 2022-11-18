@@ -1,0 +1,14 @@
+NODE JS
+
+Temos os 3 tipos de parâmetros abaixo: 
+
+-> Body - É utilizado sempre que for necessário enviar dados para o corpo da aplicação
+
+-> Params - Parâmetros de rota presentes na URL. EX:
+
+	"/product/produto-123"
+
+-> Query - Parâmetros que fazem parte da rota mas não são obrigatórios. EX:
+
+	"/product?id=21656511516&value=5165198151981"
+

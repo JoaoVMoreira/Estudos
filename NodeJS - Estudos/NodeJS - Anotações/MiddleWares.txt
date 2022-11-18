@@ -1,0 +1,8 @@
+NODE JS
+
+Middlewares são funções executadas antes de qualquer ação do express.
+
+O middleware é utilizado da seguinte forma:
+
+express.use((req, res, next) => {
+})

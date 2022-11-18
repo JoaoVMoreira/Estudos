@@ -1,0 +1,26 @@
+NODE JS
+
+Variaveis de hambiente são variaveis que possuem dados sensiveis da aplicação.
+
+É necessário criar o arquivo .env e adiciona-lo no git ignore (se tiver).
+
+Tambem é necessário instalar a biblioteca .env
+
+	yarn add dotenv
+
+
+
+Para que possa ser utilizado é necessário informa-lo na pagina do projeto:
+
+const doteenv = require('dotenv')
+
+dotenv.config
+
+{no arquivo .env}
+La iremos informar o nome da variavel + o valor que a mesma recebe:
+
+MONGODB_PASSWORD = admin
+
+A variavel é chamada a partir dos prefixos:
+
+process.env.->nome<-

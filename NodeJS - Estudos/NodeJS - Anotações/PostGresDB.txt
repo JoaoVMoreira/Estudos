@@ -1,0 +1,36 @@
+NODE JS
+
+PostGress é um software para curação de banco de dados local. O mesmo é instalado na maquina.
+
+Para utilizar o postgres na aplicação é necessário primeiramente preparar todo o ambiente:
+
+-Criar o banco de dados no postgres
+-Abrir o banco de dados criado pelo BeKeeper
++port: 5432
++user: postgres
+
+
+
+PRISMA 
+
+
+Em seguida é necessário realizar a instalação do prisma e do prismaClient
+
+-- yarn add prisma
+-- yarn add @prisma/client
+
+para iniciar o prisma na aplicação é necessário utilizar o comando abaixo:
+
+// yarn prisma init
+
+Após a ativação do prisma será criada sua pasta e o arquivo Schema, onde ficarão nossas tabelas.
+
+É necessário conectar o prisma ao banco de dados, informando user e senha na pasta .env
+
+Tambem é necessário realizar a ativação do PrismaClient
+
+*(Em src) criar a pasta "prisma"
+*criar arquivo prisma.js
+*importar o prisma Client
+* const prismaClient = new PrismaClient()
+*esportar prismaClient 

@@ -1,0 +1,22 @@
+TYPESCRIPT
+
+Podemos definir os tipos de classes presentes no this
+
+class Person{
+	id: number;
+	name: string
+
+	//Em seguida informamos ao constructor oque ele irá receber.
+	constructor(id: number, name: string){
+		//Em seguida informamos os valores recebidos
+		this.id = id;
+		this.name = name
+	}
+}
+
+Podemos tambem tipar medotos, alem de utilizar interfaces. 
+
+{As interfaces de uma classe se iniciam com I}
+
+Para implementar uma interface em uma classe usamos o comando implements nome_classe
+

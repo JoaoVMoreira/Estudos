@@ -1,0 +1,14 @@
+TYPESCRIPT
+
+Tipagem dinamica(JavaScript) = O tipo da variavel é associado ao seu valor e nao é explicidamente declarado.
+
+Tipagem estática(TypeScript) = O tipo de uma variavel é explicidamente declarado e inalteravel.
+
+As linguagens estáticas utilizam compiladores para verificar se as variaveis presentes no codigo estão de acordo com as tipagens selecionadas anteriormente. 
+
+
+O TypeScript pode ser utilizado em front-end e back-end, uma vez que seu compilador o converte para JavaScript 
+
+
+*É recomendado que o TS seja utilizado em projetos grandes e projetos open source.
+*O TS ajuda somente no processo de desenvolvimento. Não ocorre ganho de performance na aplicação

@@ -1,0 +1,18 @@
+{
+  "name": "Treinando2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "joao",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.18.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mongoose": "^6.7.2",
+    "nodemon": "^2.0.20"
+  }
+}

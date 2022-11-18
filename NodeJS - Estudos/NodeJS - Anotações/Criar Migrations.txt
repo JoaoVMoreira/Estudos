@@ -1,0 +1,49 @@
+NODE JS
+
+Criando migrations
+
+Para criar um Schema no prisma utilizamos a seguinte sintaxe:
+
+model *Nome* {
+	*Conteudo*
+}
+
+Dentro do model informamos cada componente que o mesmo terá, juntamente com o tipo de conteudo que o mesmo recebe (String, boolean, Number). Ex:
+
+nome String,
+
+
+Tambem é necessário realizar a criação de um ID:
+
+id String @id @default(uuid()) --> Gerado automaticamente
+
+
+Temos tambem a opção de informar o momento que foi criado tal item:
+
+created_at DateTime? @default(now())
+
+
+É possivel tambem mapear a tabela criada com o seguinte codigo:
+
+@@map("users")
+
+
+
+Em seguida é necessário criar a migrate no banco de dados com o seguinte comando:
+
+yarn prisma migrate dev
+
+create-table-*nome*
+
+
+
+Para relacionar duas models:
+
+No model pai: (após o map)
+nome_map nome_model[]
+
+No model filho: (antes do map)
+nome_map nome_model @relation(fields: [nome_map_id], references: [id])
+
+(Após o map)
+nome_map_id String

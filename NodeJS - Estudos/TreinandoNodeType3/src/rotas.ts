@@ -5,5 +5,4 @@ const rotas = Router()
 
 rotas.post('/teste', new TesteController().handle)
 
-
 export {rotas}

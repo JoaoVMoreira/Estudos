@@ -1,0 +1,46 @@
+AXIOS
+
+//Base URL
+
+
+Primeiro realizamos a criação da pasta axios e do arquivo axios config.tsx.
+
+Em seguida utilizamos o codigo abaixo para definir a baseURL:
+
+const base = axios.create({
+	baseURL: `https://localhost.../`,
+	Headers: {
+		"Content-Type": "application/json"
+	}
+})
+
+export default base
+
+
+//Requisitar dados da API
+
+Para realizar a requisição dos dados precisamos criar a variavel get...:
+
+const getDados = async ()=>{
+	try{
+		const nome = await base.get("/pagina") 
+	}catch(error){
+		console.log(error)
+	}
+}
+ 
+
+//.POST 
+
+Primeiramente utilizamos as useStates para apresentar os dados recebidos da API com o front-end.
+
+Em seguida criamos uma variavel que irá receber os dados necessários:
+
+const dados = {title, name, description}
+
+E, para finalizar, postamos os dados:
+
+await base.post("/pagina", {
+	body: dados
+})
+

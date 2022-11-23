@@ -15,7 +15,7 @@ model Product{
   nome String
   descricao String
   categoria String
-  preco Int
+  preco String
   created_at DateTime? @default(now())
 
   @@map("Product")

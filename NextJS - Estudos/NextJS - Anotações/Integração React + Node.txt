@@ -1,0 +1,14 @@
+Primeiramente é necessário realziar a instalação do Axios
+
+Yarn add axios -D
+
+Em seguida realizamos a criação de um arquivo que será responsável por realizar todas as solicitações da API
+
+Em seguida utilizamos o comando abaixo para informar a URL base:
+
+export default axios.create({
+	baseURL: `https://localhost.../`
+})
+
+É necessário criarmos uma useState para cada dado que queiramos cadastrar.
+

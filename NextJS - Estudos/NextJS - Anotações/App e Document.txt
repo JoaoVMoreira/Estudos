@@ -1,0 +1,35 @@
+NEXTJS
+
+O arquivo _app é responsável por renderizar as paginas da aplicação.
+
+Podemos realizar a criação do arquivo _document.tsx para rederizarmos uma estrutura somente no momento que a aplicação comecar a rodar. 
+
+É necessário importar os modulos HTML, Head, Main e NextScript de document.
+
+Em seguida utilizamos a seguinte estrutura:
+
+export default function Document(){
+	return(
+
+		<Html>
+			<Head>
+
+			</Head>
+			<body>
+				<Main/>
+				<NextScript/>
+			</body>
+		</Html>
+
+	)
+}
+
+Podemos tambem utilizar o head nas paginas para alterar o titulo com a seguinte estrutura:
+
+return(
+	<>
+		<Head>
+			<title>...</title>
+		</Head>
+	</>
+)

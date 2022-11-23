@@ -3,7 +3,7 @@ interface ITesteService{
     nome: string,
     descricao: string,
     categoria: string,
-    preco: number
+    preco: string
 }
 
 class TesteService{

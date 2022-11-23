@@ -1,0 +1,13 @@
+NEXT JS
+
+Para utilizarmos o ts integrado ao NEXT precisamos instalar as tipagens necessárias:
+
+	yarn add typescript @types/react @types/node -D
+
+Para que o next reconheça os arquivos ts apenas mudamos sua extensão para ".tsx".
+
+Podemos tambem tipar o MyApp da seguinte forma:
+
+import { AppProps } from 'next/app'
+
+Após a importação somente tipamos as props

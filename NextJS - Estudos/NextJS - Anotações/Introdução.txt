@@ -1,0 +1,28 @@
+NEXT JS
+
+Next js é um framework construido em React que adiciona mais funcionalidades ao ReactJS
+
+Podemos realziar a renderização por parte do servidor.
+Geração de paginas estáticas.
+
+Para realizar a criação de um projeto next utilizamos o comando:
+
+	yarn create next-app *nome
+
+
+
+Para rodar o projeto utilizamos o yarn dev
+
+
+O next vem com a pasta styles onde contem todo o CSS da pagina institucional. A mesma pode ser excluida.
+
+Em pages, no arquivo _app, realizamos a exclusão da linha onde é importado o global.
+
+Podemos tambem mover a pasta pages para src
+No arquivo index.js podemos retirar todo o HTML presente por padrão
+
+Podemos realizar a crição de novas paginas a partir dos arquivos presentes na pasta pages, ou senha, se criarmos o arquivo "contato.js" estaremos tambem criando a pagina /contato
+
+
+
+**É IMPORTANTE QUE AS PAGINAS SEMPRE SEJAM CRIADAS COM EXPORT DEFAULT
